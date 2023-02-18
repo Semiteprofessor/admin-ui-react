@@ -1,0 +1,174 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	/**
+   * colors
+   */
+
+	--spanish-gray: hsl(0, 0%, 60%);
+	--sonic-silver: hsl(0, 0%, 47%);
+	--eerie-black: hsl(0, 0%, 13%);
+	--salmon-pink: hsl(241, 94%, 69%);
+	--sandy-brown: hsl(29, 90%, 65%);
+	--bittersweet: hsl(0, 100%, 70%);
+	--ocean-green: hsl(152, 51%, 52%);
+	--davys-gray: hsl(0, 0%, 33%);
+	--cultured: hsl(0, 0%, 93%);
+	--white: hsl(0, 100%, 100%);
+	--onyx: hsl(0, 0%, 27%);
+	--background: rgb(0, 30, 60);
+	--primary: rgb(37, 152, 228);
+	--secondary: rgb(236, 103, 170);
+	--input: rgb(181, 244, 247);
+
+	/**
+   * typography
+   */
+
+	--fs-1: 1.563rem;
+	--fs-2: 1.375rem;
+	--fs-3: 1.25rem;
+	--fs-4: 1.125rem;
+	--fs-5: 1rem;
+	--fs-6: 0.938rem;
+	--fs-7: 0.875rem;
+	--fs-8: 0.813rem;
+	--fs-9: 0.75rem;
+	--fs-10: 0.688rem;
+	--fs-11: 0.625rem;
+
+	--weight-300: 300;
+	--weight-400: 400;
+	--weight-500: 500;
+	--weight-600: 600;
+	--weight-700: 700;
+
+	/**
+   * border-radius
+   */
+
+	--border-radius-md: 10px;
+	--border-radius-sm: 5px;
+
+	/**
+   * transition 
+   */
+
+	--transition-timing: 0.2s ease;
+}
+
+.primary {
+	color: var(--primary);
+}
+
+.secondary {
+	color: var(--secondary);
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.btn {
+	padding: 10px 28px;
+	background-color: transparent;
+	border: 2px solid rgb(255, 81, 0);
+	border-radius: 12px 32px;
+	font-family: "Poppins";
+	color: hsl(0, 0%, 93%);
+	font-size: 20px;
+	font-weight: 600;
+	margin: 10px 0px;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+		rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+		rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+		rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+		rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn:hover {
+	background-color: aqua;
+	color: #000;
+}
+
+.btn:hover {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* input {
+	padding: 10px 32px;
+	border: 1px solid var(--salmon-pink);
+	background: var(--input);
+	border-radius: 24px 4px;
+	font-size: 1rem;
+	margin-right: 0.8rem;
+	font: inherit;
+} */
+
+body {
+	/* background: var(--background); */
+	/* color: #fff; */
+	font-family: "Poppins", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+		Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 2.1rem;
+		line-height: 1.2rem;
+		color: #fff;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		line-height: 1.2rem;
+		color: #fff;
+	}
+
+	h5 {
+		font-size: 1.5rem;
+		line-height: 1.2rem;
+		color: #fff;
+	}
+
+	p {
+		font-size: 1rem;
+		color: #fff;
+	}
+
+	.btn {
+		width: 100%;
+		margin: 1rem 0;
+	}
+
+	.input {
+		width: 100%;
+	}
+}
